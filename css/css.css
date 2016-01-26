@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: pink;
+    padding: auto;
+}
+
+ul {
+    list-style: none;
+    float: left;
+    width: 100%;
+}
+
+li {
+    float: left;
+    margin-right: 110px;
+    font-size: 220%;
+}
+
+#content {
+    float: left;
+    margin-top: 300px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 150px;
+    padding: 10px;
+    width: 40%;
+    height: auto;
+    background-color: saddlebrown;
+}
