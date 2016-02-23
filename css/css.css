@@ -45,8 +45,15 @@ div.content{
     background-color: red;
 }
 
-h1#Oppettider_title {
+h1{
     font-size: 350%;
+}
+
+p {
+    font-size 150%;
+}
+
+h1#Oppettider_title {
     margin-left: 25px;
     padding-bottom: 20px;
     margin-top: 50px;
@@ -56,7 +63,6 @@ h1#Oppettider_title {
 p#Oppettider_info {
     margin-top: 50px;
     text-align: center;
-    font-size: 149%;
 }
 
 hr {
@@ -70,7 +76,6 @@ hr {
 }
 
 h1#om_oss {
-    font-size: 350%;
     margin-left: 25px;
     padding-bottom: 20px;
     margin-top: 50px;
@@ -80,12 +85,58 @@ h1#om_oss {
 p#historia {
     margin: 50px;
     text-align: center;
-    font-size: 149%;
     margin-left: 150px;
     margin-right: 150px;
 
 }
 
+div#anv_info {
+    float: left;
+}
+
+div#textshizz {
+    float: left
+}
+
+input{
+    margin-left: 250px;
+    margin-bottom: 40px;
+}
+
+p.inputtext{
+    margin: 0px;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+div#textshizz{
+    padding-left: 50px;
+    margin-top: 50px;
+}
+
+div#kontakt{
+    height: 600px;
+}
+
+h1#kontakttext{
+    text-align: center;
+}
+
+img#map{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h1#karta{
+    text-align: center;
+}
+
+p#karttext{
+    text-align: center;
+}
 div#pizzapicture img {
     height: 1000px;
     width: 100%;
