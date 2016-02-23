@@ -36,12 +36,54 @@ li#utbud {
 }
 
 div.content{
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-left: 12%;
     margin-right:12%;
     width: 76%;
-    height: 1000px;
+    height: 900px;
     background-color: red;
-    display: flex;
+}
+
+h1#Oppettider_title {
+    font-size: 350%;
+    margin-left: 25px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+p#Oppettider_info {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 149%;
+}
+
+hr {
+    color: black;
+    margin: 0px;
+    border-width: 5px;
+    border-style: solid;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1#om_oss {
+    font-size: 350%;
+    margin-left: 25px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+p#historia {
+    margin: 50px;
+    text-align: center;
+    font-size: 149%;
+    margin-left: 150px;
+    margin-right: 150px;
+
 }
 
 div#pizzapicture img {
