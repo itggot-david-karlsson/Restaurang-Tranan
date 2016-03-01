@@ -15,7 +15,7 @@ div#header {
 
 
 
-ul {
+ul#headertext {
     list-style: none;
     width: 1336px;
     margin: 0px;
@@ -24,7 +24,7 @@ ul {
     margin-left: 300px;
 }
 
-li {
+li.headeritems {
 
     margin-left: 25px;
     margin-right: 25px;
@@ -45,6 +45,47 @@ div.content{
     width: 76%;
     height: 900px;
     background-color: #F5EDC5;;
+}
+div#foodmenu {
+    height: 1500px;
+
+}
+
+div#pizzatext {
+    width: 600px;
+    height: 300px;
+    margin-top: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+div.pizza{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+div#pizzatext ul{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#pizzatext li{
+    font-size: 250%;
+    font-family: "Source Sans Pro"
+}
+
+h1.prisklass{
+    text-align: center;
+}
+
+h1#prisklass2text {
+    margin-top: 300px;
 }
 
 h1{
@@ -154,13 +195,7 @@ p#karttext{
 div#pizzapicture img {
     height: 1000px;
     width: 100%;
-    margin:0px;
-    display:flex;
-}
-
-div.pizza {
-    width: 150px;
-    height: 150px;
-    background-color: green;
+    margin: 0px;
+    display: flex;
 }
 
