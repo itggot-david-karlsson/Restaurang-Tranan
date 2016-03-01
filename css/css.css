@@ -60,7 +60,6 @@ div#pizzatext {
     }
 
 div.pizza{
-    background-color: red;
     width: 200px;
     height: 200px;
     float: left;
@@ -85,6 +84,10 @@ h1.prisklass{
 }
 
 h1#prisklass2text {
+    margin-top: 300px;
+}
+
+h1#reviews{
     margin-top: 300px;
 }
 
