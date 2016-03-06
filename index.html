@@ -10,36 +10,113 @@
 <div id="header">
 
 <ul id="headertext">
-    <li class="headeritems">Utbud</li>
-    <li class="headeritems">Öppettider</li>
-    <li class="headeritems">Om oss</li>
-    <li class="headeritems">Kontakta oss</li>
-    <li class="headeritems">Karta</li>
-    <li class="headeritems">Kundvagn</li>
+
+    <li class="headeritems"><a href="#foodmenu">Utbud</a></li>
+    <li class="headeritems"><a href="#oppettider">Öppettider<a/></li>
+    <li class="headeritems"><a href="#om_oss_scroll">Om oss</a></li>
+    <li class="headeritems"><a href="#kontakt">Kontakta oss</a></li>
+    <li class="headeritems"><a href="#karta">Karta</a></li>
+    <li class="headeritems"><a href="#kundvagn">Kundvagn</a></li>
 
 </ul>
 
 </div>
 
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Meny</button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="#foodmenu">Utbud</a>
+        <a href="#oppettider">Öppettider<a/>
+        <a href="#om_oss_scroll">Om oss</a>
+        <a href="#kontakt">Kontakta oss</a>
+        <a href="#karta">Karta</a>
+        <a href="#kundvagn">Kundvagn</a>
+    </div>
+</div>
+
+<script>
+    /* When the user clicks on the button,
+     toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
 <div id="pizzapicture">
-    <img src="img/Pizzas/MainPizza.jpg">
+    <img src="./img/Pizzas/MainPizza.jpg">
 </div>
 
 <div class="content" id="foodmenu">
     <h1 class="prisklass">Prisklass 1: 400 000€</h1>
     <hr>
-    <div class="pizza"><img src="img/Pizzas/TheOnlyPizza.png"></div>
-    <div class="pizza"><img src="img/Pizzas/TheOnlyPizza.png"></div>
-    <div class="pizza"><img src="img/Pizzas/TheOnlyPizza.png"></div>
-    <div class="pizza"><img src="img/Pizzas/TheOnlyPizza.png"></div>
-    <div class="pizza"><img src="img/Pizzas/TheOnlyPizza.png"></div>
+    <div class="holder">
+    <div class="fooddesc">
+        <img src="./img/Pizzas/TheOnlyPizza.png">
+        <p>mkt bra pizza mkt billig inga problem</p>
+
+    </div>
+
+        <div class="fooddesc">
+            <img src="./img/Pizzas/TheOnlyPizza.png">
+            <p>mkt bra pizza mkt billig inga problem</p>
+
+        </div>
+
+        <div class="fooddesc">
+            <img src="./img/Pizzas/TheOnlyPizza.png">
+            <p>mkt bra pizza mkt billig inga problem</p>
+
+        </div>
+
+        <div class="fooddesc">
+            <img src="./img/Pizzas/TheOnlyPizza.png">
+            <p>mkt bra pizza mkt billig inga problem</p>
+
+        </div>
+    </div>
+
     <h1 class="prisklass" id="prisklass2text">Prisklass 2: 40 tusen miljarder SEK</h1>
     <hr>
-    <div class="pizza"><img src="img/Pizzas/TheOnlyPizza.png"></div>
-    <div class="pizza"><img src="img/Pizzas/TheOnlyPizza.png"></div>
-    <div class="pizza"><img src="img/Pizzas/TheOnlyPizza.png"></div>
-    <div class="pizza"><img src="img/Pizzas/TheOnlyPizza.png"></div>
-    <div class="pizza"><img src="img/Pizzas/TheOnlyPizza.png"></div>
+    <div class="holder">
+        <div class="fooddesc">
+            <img src="./img/Pizzas/TheOnlyPizza.png">
+            <p>mkt bra pizza mkt billig inga problem</p>
+
+        </div>
+
+        <div class="fooddesc">
+            <img src="./img/Pizzas/TheOnlyPizza.png">
+            <p>mkt bra pizza mkt billig inga problem</p>
+
+        </div>
+
+        <div class="fooddesc">
+            <img src="./img/Pizzas/TheOnlyPizza.png">
+            <p>mkt bra pizza mkt billig inga problem</p>
+
+        </div>
+
+        <div class="fooddesc">
+            <img src="./img/Pizzas/TheOnlyPizza.png">
+            <p>mkt bra pizza mkt billig inga problem</p>
+
+        </div>
+    </div>
     <h1 class="prisklass" id="reviews">Omdömen från kunder:</h1>
     <hr>
 
@@ -49,7 +126,6 @@
             <li>mkt bra ingredienser 10/10</li>
             <li>kompispris</li>
             <li>femton minuter-en kvart</li>
-            <li> 10kr</li>
         </ul>
     </div>
 </div>
@@ -59,7 +135,7 @@
     <h1 id="Oppettider_title">Öppettider</h1>
     <hr>
     <p id="Oppettider_info">6 - 20 På Vardagar <br>08 - 22 På Lördagar <br>09 - 23 På Söndagar <br><br> Domedagsberget 1
-        <br>420 69 <br>0713 37 69 69</p>
+        <br>420 69 <br id="om_oss_scroll">0713 37 69 69</p>
 
     <h1 id="om_oss"> Om oss </h1>
     <hr>
@@ -76,9 +152,9 @@
         <p class="inputtext">Mobil:</p>
         <input class="inputfield" type="text" size="35">
     </div>
-    <div id="textshizz">
+    <div id="textfield">
         <p style="margin: 0px;">Skriv ditt mejl här:</p>
-        <textarea rows="12" cols="50"></textarea><br>
+        <textarea rows="13" cols="50"></textarea><br>
         <input class="submitbutton" type="submit" value="Skicka!">
     </div>
 
@@ -91,5 +167,10 @@
 
 </div>
 
+<div class="content" id="kundvagn">
+    <h1 style="text-align: center;">Kundvagn</h1>
+    <hr>
+    <h2 style="text-align: center; margin-top: 100px;"> Kundvagnen kommer snart!</h2>
+</div>
 </body>
 </html>
